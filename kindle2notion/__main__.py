@@ -14,12 +14,12 @@ from kindle2notion.reading import read_raw_clippings
 @click.argument("clippings_file")
 @click.option(
     "--enable_location",
-    default=True,
+    default=False,
     help='Set to False if you don\'t want to see the "Location" and "Page" information in Notion.'
 )
 @click.option(
     "--enable_highlight_date",
-    default=True,
+    default=False,
     help='Set to False if you don\'t want to see the "Date Added" information in Notion.',
 )
 @click.option(
